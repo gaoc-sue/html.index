@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro do GALO</title>
+<link rel="icon" href="data:image/png;base64,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">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&amp;family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&amp;display=swap">
+<style>body{margin:0;background:#F2E7CF}</style>
+<style>
+/* ===== Cadastro ===== */
+:root{--vermelho:#C4231E;--vermelho-texto:#A51C17;--vermelho-escuro:#7E1411;--rosa:#F4D6C3;--cinza:#DDD3BF;--borda:#C9B48C;--texto:#1E1813;--texto-2:#4B3F33}
+#vista-cadastro *{box-sizing:border-box}
+#vista-cadastro{margin:0;font-family:"Fira Sans","Segoe UI",Helvetica,sans-serif;background:#F2E7CF url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22220%22%20height%3D%22220%22%3E%3Cfilter%20id%3D%22g%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.9%22%20numOctaves%3D%222%22%20stitchTiles%3D%22stitch%22/%3E%3CfeColorMatrix%20values%3D%220%200%200%200%20.12%20%200%200%200%200%20.09%20%200%200%200%200%20.07%20%200%200%200%20.55%200%22/%3E%3C/filter%3E%3Crect%20width%3D%22220%22%20height%3D%22220%22%20filter%3D%22url%28%23g%29%22%20opacity%3D%22.16%22/%3E%3C/svg%3E");min-height:100vh;color:var(--texto);-webkit-font-smoothing:antialiased}
+#vista-cadastro button,#vista-cadastro input{font-family:inherit}
+#vista-cadastro button{cursor:pointer}
+#vista-cadastro a{color:var(--vermelho-texto)}
+#vista-cadastro a:hover{color:var(--vermelho-escuro)}
+#vista-cadastro a:focus-visible,#vista-cadastro button:focus-visible,#vista-cadastro input:focus-visible{outline:4px solid #1E1813;outline-offset:3px}
+#vista-cadastro [hidden]{display:none!important}
+#vista-cadastro .topo{background:#1E1813;position:relative;margin-bottom:26px}#vista-cadastro .topo::after{content:'';position:absolute;left:0;right:0;bottom:-25px;height:26px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201200%2026%22%20preserveAspectRatio%3D%22none%22%3E%3Cpath%20d%3D%22M0%2026.0%20L0%2012.0%20L0%2011.6%20L32%2011.7%20L56%209.5%20L81%202.5%20L94%2014.5%20L105%2015.9%20L130%2012.9%20L141%202.0%20L156%208.2%20L177%2014.7%20L202%2012.0%20L223%2010.2%20L257%2014.7%20L275%209.8%20L287%2014.1%20L317%2011.1%20L347%208.0%20L379%2011.8%20L399%208.6%20L427%202.7%20L460%202.2%20L473%208.5%20L487%2012.5%20L502%2013.9%20L527%208.9%20L542%2010.2%20L571%2010.4%20L587%2011.2%20L612%208.8%20L627%2010.1%20L645%201.5%20L669%209.9%20L688%2011.6%20L709%2012.6%20L724%209.2%20L753%2010.0%20L781%2015.5%20L814%2015.1%20L834%205.8%20L850%2013.6%20L880%2012.8%20L894%202.1%20L917%2014.8%20L934%2015.3%20L944%2010.2%20L956%209.4%20L980%209.1%20L1011%2015.8%20L1038%2012.7%20L1048%208.1%20L1075%204.2%20L1097%2013.8%20L1131%208.6%20L1158%2015.2%20L1185%2014.3%20L1200%2012.0%20L1200%2026.0%20Z%22%20fill%3D%22%231E1813%22/%3E%3Cpath%20d%3D%22M20%2022.5%20q16%20-2%2032%200%20M158%2022.0%20q12%20-2%2025%200%20M296%2021.1%20q14%20-2%2029%200%20M391%2021.0%20q15%20-2%2029%200%20M458%2023.0%20q15%20-2%2031%200%20M597%2019.9%20q16%20-2%2033%200%20M723%2020.2%20q15%20-2%2029%200%20M859%2021.8%20q8%20-2%2016%200%20M921%2020.4%20q15%20-2%2030%200%20M1002%2020.5%20q16%20-2%2032%200%20M1117%2019.3%20q19%20-2%2038%200%20M1178%2021.4%20q11%20-2%2022%200%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20fill%3D%22none%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E") repeat-x;background-size:1200px 26px;transform:scaleY(-1)}#vista-cadastro .topo a:focus-visible{outline-color:#F2C14E}
+#vista-cadastro .topo-dentro{max-width:880px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+#vista-cadastro .marca-galo{display:flex;align-items:center;gap:14px;color:#F2E7CF;text-decoration:none}
+#vista-cadastro .marca-galo:hover{color:#F2E7CF}
+#vista-cadastro .logo-quadro{width:80px;height:80px;border-radius:0;background:transparent;display:flex;align-items:center;justify-content:center}
+#vista-cadastro .logo-quadro img{width:80px;height:auto;display:block}
+#vista-cadastro .nome-bloco{display:flex;flex-direction:column;gap:4px}
+#vista-cadastro .sigla{font-size:14px;font-weight:500;line-height:1.25;max-width:16ch}
+#vista-cadastro .marca-galo span.nome{line-height:1;font-family:"Alfa Slab One",Georgia,serif;font-size:32px;font-weight:400;letter-spacing:.03em}
+#vista-cadastro .link-site{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:4px;border:2px solid #F2E7CF;color:#F2E7CF;font-size:17px;font-weight:700;text-decoration:none}
+#vista-cadastro .link-site:hover{color:#1E1813;background:#F2E7CF}
+#vista-cadastro main{max-width:880px;margin:0 auto;padding:32px 24px 64px;display:flex;flex-direction:column;gap:32px}
+#vista-cadastro .barra{display:flex;align-items:center;justify-content:space-between;gap:16px}
+#vista-cadastro .btn-voltar{display:inline-flex;align-items:center;gap:6px;min-height:56px;padding:0 18px 0 8px;border-radius:6px;border:0;background:var(--cinza);font-size:19px;font-weight:700;color:var(--texto)}
+#vista-cadastro .passos{display:flex;flex-direction:column;align-items:center;gap:8px}
+#vista-cadastro .pontos{display:flex;gap:8px}
+#vista-cadastro .pontos span{height:12px;width:12px;border-radius:999px;background:#C9B48C;transition:width .2s}
+#vista-cadastro .pontos span.feito{background:var(--vermelho)}
+#vista-cadastro .pontos span.atual{width:36px;background:var(--vermelho)}
+#vista-cadastro .passos-texto{font-size:15px;font-weight:600;color:var(--texto-2)}
+#vista-cadastro .btn-ouvir{display:inline-flex;align-items:center;gap:10px;min-height:64px;padding:0 22px 0 12px;border-radius:999px;border:0;background:var(--vermelho);color:#F2E7CF;font-size:19px;font-weight:700}
+#vista-cadastro .btn-ouvir .mic-bola{width:44px;height:44px}
+#vista-cadastro .tela{display:flex;flex-direction:column;gap:28px}
+#vista-cadastro h1{margin:0;font-family:"Alfa Slab One",Georgia,serif;font-size:clamp(30px,4vw,42px);line-height:1.12;font-weight:400;color:var(--texto);letter-spacing:.005em;filter:url(#tinta-gasta)}
+#vista-cadastro h1.grande{font-size:clamp(36px,5vw,54px)}
+#vista-cadastro .lead{margin:0;font-size:20px;line-height:1.5}
+#vista-cadastro .lead-grande{font-size:22px;max-width:36ch}
+#vista-cadastro .nota{font-size:18px;color:var(--texto-2);max-width:46ch}
+#vista-cadastro .titulo{display:flex;align-items:center;gap:18px}
+#vista-cadastro .titulo-ico{flex:0 0 auto;width:76px;height:76px;border-radius:4px;background:#1E1813;display:flex;align-items:center;justify-content:center;color:#F2E7CF}
+#vista-cadastro .mic-bola{width:60px;height:60px;border-radius:50%;background:#FAF3E3;color:var(--vermelho);display:flex;align-items:center;justify-content:center;flex:0 0 auto}
+#vista-cadastro .btn-ouvir-grande{align-self:flex-start;display:inline-flex;align-items:center;gap:18px;min-height:96px;padding:0 36px 0 18px;border-radius:999px;border:0;background:var(--vermelho);color:#F2E7CF;font-size:24px;font-weight:800}
+#vista-cadastro .btn-ouvir-grande .mic-bola{width:66px;height:66px}
+#vista-cadastro .grade{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:16px}
+#vista-cadastro .grade-estreita{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+#vista-cadastro .grade-larga{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+#vista-cadastro .cartao-inicio{display:flex;flex-direction:column;align-items:center;gap:14px;min-height:190px;padding:24px;border-radius:6px;border:4px solid var(--borda);background:#FAF3E3;color:var(--texto);font-size:24px;font-weight:800}
+#vista-cadastro .cartao-inicio span{color:var(--texto)}
+#vista-cadastro .cartao-inicio.destaque{border-color:var(--texto);box-shadow:6px 6px 0 var(--vermelho)}
+#vista-cadastro .cartao-inicio.destaque span{color:var(--texto)}
+#vista-cadastro .opcao{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;min-height:168px;padding:20px 12px;border-radius:6px;border:4px solid var(--borda);background:#FAF3E3;color:var(--texto)}
+#vista-cadastro .opcao-nome{font-size:21px;font-weight:700;line-height:1.2;text-align:center;color:var(--texto)}
+#vista-cadastro .opcao[aria-pressed="true"]{border-color:var(--vermelho);background:var(--rosa);color:var(--vermelho-texto)}
+#vista-cadastro .marca{position:absolute;top:10px;right:10px;width:34px;height:34px;border-radius:50%;background:var(--vermelho);color:#F2E7CF;display:none;align-items:center;justify-content:center}
+#vista-cadastro .opcao[aria-pressed="true"] .marca{display:flex}
+#vista-cadastro .btn-mic{align-self:flex-start;display:inline-flex;align-items:center;gap:16px;min-height:88px;padding:0 32px 0 16px;border-radius:999px;border:0;background:var(--vermelho);color:#F2E7CF;font-size:22px;font-weight:700}
+#vista-cadastro .btn-mic.ouvindo{background:var(--vermelho-escuro)}
+#vista-cadastro .campo{display:flex;flex-direction:column;gap:8px;max-width:520px}
+#vista-cadastro .campo label{font-size:17px;color:var(--texto-2)}
+#vista-cadastro .campo input{min-height:64px;padding:0 20px;border-radius:4px;border:3px solid var(--texto);font-size:22px;color:var(--texto);background:#FAF3E3;width:100%}
+#vista-cadastro .teclado-box{display:flex;flex-direction:column;gap:16px;max-width:420px}
+#vista-cadastro .visor{display:flex;align-items:center;min-height:80px;padding:0 24px;border-radius:6px;background:var(--cinza);font-size:34px;font-weight:700;letter-spacing:.04em}
+#vista-cadastro .teclado{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+#vista-cadastro .tecla{min-height:76px;border-radius:6px;border:3px solid var(--borda);background:#FAF3E3;font-size:34px;font-weight:700;color:var(--texto);display:flex;align-items:center;justify-content:center}
+#vista-cadastro .tecla:active{background:var(--rosa)}
+#vista-cadastro .tecla-cinza{background:var(--cinza)}
+#vista-cadastro .tecla-som{border-color:var(--vermelho);color:var(--vermelho)}
+#vista-cadastro .btn-sem{align-self:flex-start;min-height:64px;padding:0 24px;border-radius:6px;border:3px solid var(--borda);background:#FAF3E3;font-size:20px;font-weight:700;color:var(--texto)}
+#vista-cadastro .btn-sem[aria-pressed="true"]{border-color:var(--vermelho);background:var(--rosa)}
+#vista-cadastro .linha{display:flex;flex-wrap:wrap;gap:16px}
+#vista-cadastro .btn-grande{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:76px;padding:0 28px;border-radius:6px;border:3px solid var(--vermelho);background:var(--vermelho);color:#F2E7CF;font-size:22px;font-weight:700}
+#vista-cadastro .btn-contorno{display:inline-flex;align-items:center;justify-content:center;min-height:76px;padding:0 28px;border-radius:6px;border:3px solid var(--vermelho);color:var(--vermelho-texto);font-size:22px;font-weight:700;text-decoration:none}
+#vista-cadastro .revisao{margin:0;padding:0;list-style:none;max-width:640px}
+#vista-cadastro .revisao li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0;border-bottom:2px dashed var(--borda)}
+#vista-cadastro .revisao li>div{display:flex;flex-direction:column;gap:4px}
+#vista-cadastro .rev-rotulo{font-size:16px;color:var(--texto-2)}
+#vista-cadastro .rev-valor{font-size:22px;font-weight:700}
+#vista-cadastro .btn-mudar{flex:0 0 auto;min-height:52px;padding:0 20px;border-radius:6px;border:3px solid var(--vermelho);background:#FAF3E3;color:var(--vermelho-texto);font-size:18px;font-weight:700}
+#vista-cadastro .ok-bola{width:120px;height:120px;border-radius:50%;background:var(--vermelho);color:#F2E7CF;display:flex;align-items:center;justify-content:center}
+#vista-cadastro .aviso{margin:0;padding:18px 22px;border-radius:6px;background:#fff4d6;color:#5a3d00;font-size:19px;font-weight:600;line-height:1.45}
+#vista-cadastro .btn-continuar{width:100%;min-height:80px;border-radius:4px;border:0;background:var(--vermelho);color:#F2E7CF;font-size:24px;font-weight:800;box-shadow:6px 6px 0 var(--texto)}
+#vista-cadastro .btn-continuar.bloqueado{background:#DDD3BF;color:var(--texto-2);box-shadow:none}
+@media (max-width:560px){#vista-cadastro .barra{flex-wrap:wrap}
+#vista-cadastro .passos{order:3;width:100%}}
+</style>
+<style>
+/* ===== Logo do GALO saindo do ovo (ao passar o mouse) ===== */
+.logo-galo .caixa-logo{position:relative;overflow:hidden}
+.logo-galo .galo-img{transform-origin:50% 85%}
+.logo-galo .ovo{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.logo-galo .ovo-todo{transform-box:view-box;transform-origin:50% 90%;transform:scale(0)}
+.logo-galo .casca-cima,.logo-galo .casca-baixo{transform-box:view-box;transform-origin:50% 60%}
+.logo-galo:hover .galo-img,.logo-galo:focus-visible .galo-img{animation:galo-nasce 1.8s ease-out both}
+.logo-galo:hover .ovo-todo,.logo-galo:focus-visible .ovo-todo{animation:ovo-balanca 1.8s ease-in-out both}
+.logo-galo:hover .casca-cima,.logo-galo:focus-visible .casca-cima{animation:casca-voa 1.8s ease-in both}
+.logo-galo:hover .casca-baixo,.logo-galo:focus-visible .casca-baixo{animation:casca-cai 1.8s ease-in both}
+.logo-galo:hover .trinca,.logo-galo:focus-visible .trinca{animation:trinca 1.8s linear both}
+.logo-galo:hover .ovo-inteiro,.logo-galo:focus-visible .ovo-inteiro{animation:ovo-inteiro 1.8s linear both}
+@keyframes galo-nasce{
+  0%{transform:translateY(0) scale(1);opacity:1}
+  10%{transform:translateY(22%) scale(.35);opacity:0}
+  50%{transform:translateY(22%) scale(.35);opacity:0}
+  66%{transform:translateY(-14%) scale(1.08);opacity:1}
+  78%{transform:translateY(3%) scale(.96)}
+  88%{transform:translateY(-3%) scale(1.02)}
+  100%{transform:translateY(0) scale(1);opacity:1}
+}
+@keyframes ovo-balanca{
+  0%{transform:scale(0)}
+  12%{transform:scale(1.06)}
+  16%{transform:scale(1) rotate(0)}
+  22%{transform:rotate(-9deg)}
+  28%{transform:rotate(9deg)}
+  34%{transform:rotate(-7deg)}
+  40%{transform:rotate(7deg)}
+  46%{transform:rotate(0)}
+  100%{transform:rotate(0)}
+}
+@keyframes trinca{0%,28%{opacity:0}34%,48%{opacity:1}50%,100%{opacity:0}}
+@keyframes ovo-inteiro{0%,48%{opacity:1}50%,100%{opacity:0}}
+@keyframes casca-voa{
+  0%,50%{transform:translate(0,0) rotate(0);opacity:1}
+  70%{transform:translate(16px,-30px) rotate(38deg);opacity:1}
+  84%,100%{transform:translate(26px,-48px) rotate(60deg);opacity:0}
+}
+@keyframes casca-cai{
+  0%,58%{transform:translate(0,0);opacity:1}
+  80%,100%{transform:translate(0,42px);opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .logo-galo:hover .galo-img,.logo-galo:hover .ovo-todo,.logo-galo:hover .casca-cima,.logo-galo:hover .casca-baixo,.logo-galo:hover .trinca,.logo-galo:hover .ovo-inteiro,
+  .logo-galo:focus-visible .galo-img,.logo-galo:focus-visible .ovo-todo,.logo-galo:focus-visible .casca-cima,.logo-galo:focus-visible .casca-baixo,.logo-galo:focus-visible .trinca,.logo-galo:focus-visible .ovo-inteiro{animation:none}
+}
+</style>
+<script>
+  /* ===== CONFIGURE AQUI =====
+     Links das páginas no Google Sites. */
+  var LINK_INICIO = "https://sites.google.com/view/galocordel";
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('[data-link="LINK_INICIO"]').forEach(function (a) { a.href = LINK_INICIO; });
+  });
+</script>
+<script>
+  // Voz feminina em português para a leitura em voz alta
+  (function () {
+    var FEM = /(francisca|maria|luciana|thalita|let[ií]cia|yara|vit[oó]ria|joana|fernanda|camila|brenda|giovanna|leila|manuela|raquel|elza|female|feminin|mulher)/i;
+    var MASC = /(daniel|ant[oô]nio|felipe|donato|f[aá]bio|humberto|j[uú]lio|nicolau|val[eé]rio|mac[eé]rio|\bmale\b|masculin)/i;
+    var escolhida = null;
+    function escolher() {
+      try {
+        if (!window.speechSynthesis) return null;
+        var vozes = window.speechSynthesis.getVoices().filter(function (v) { return /^pt/i.test(v.lang); });
+        if (!vozes.length) return null;
+        var br = vozes.filter(function (v) { return /pt[-_]BR/i.test(v.lang); });
+        var lista = br.length ? br : vozes;
+        escolhida = lista.find(function (v) { return FEM.test(v.name); })
+          || lista.find(function (v) { return /google/i.test(v.name) && !MASC.test(v.name); })
+          || lista.find(function (v) { return !MASC.test(v.name); })
+          || null;
+        return escolhida;
+      } catch (e) { return null; }
+    }
+    if (window.speechSynthesis) {
+      escolher();
+      try { window.speechSynthesis.addEventListener('voiceschanged', escolher); } catch (e) { window.speechSynthesis.onvoiceschanged = escolher; }
+    }
+    window.galoVoz = function (fala) {
+      var v = escolhida || escolher();
+      if (v) { fala.voice = v; fala.lang = v.lang; fala.pitch = 1.05; }
+      else { fala.pitch = 1.25; }
+      fala.onstart = function () { mostrarParar(true); };
+      fala.onend = fala.onerror = function () { setTimeout(sincronizar, 150); };
+      mostrarParar(true);
+    };
+
+    // Botão "Parar áudio": aparece enquanto o site está falando
+    var botao = null;
+    function mostrarParar(sim) {
+      if (!botao) return;
+      botao.style.display = sim ? 'inline-flex' : 'none';
+    }
+    function sincronizar() {
+      try { mostrarParar(!!(window.speechSynthesis && (window.speechSynthesis.speaking || window.speechSynthesis.pending))); } catch (e) {}
+    }
+    function parar() {
+      try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch (e) {}
+      mostrarParar(false);
+    }
+    window.galoPararAudio = parar;
+    function criarBotao() {
+      if (botao || !window.speechSynthesis) return;
+      botao = document.createElement('button');
+      botao.type = 'button';
+      botao.id = 'btn-parar-audio';
+      botao.setAttribute('aria-label', 'Parar o áudio');
+      botao.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2" fill="#F2E7CF"></rect></svg><span>Parar áudio</span>';
+      botao.style.cssText = 'position:fixed;left:24px;bottom:24px;z-index:60;display:none;align-items:center;gap:10px;min-height:64px;padding:0 24px 0 18px;border-radius:4px;border:3px solid #F2E7CF;background:#1E1813;color:#F2E7CF;font-family:inherit;font-size:18px;font-weight:700;cursor:pointer;box-shadow:5px 5px 0 #C4231E';
+      botao.addEventListener('click', parar);
+      document.body.appendChild(botao);
+      setInterval(sincronizar, 500);
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', criarBotao); else criarBotao();
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') parar(); });
+  })();
+</script>
+<style>
+/* ===== toques de cordel: moldura entalhada, bandeirinhas, sol e capitular ===== */
+#vista-cadastro main::before{content:"";display:block;height:26px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20120%2026%22%20width%3D%22120%22%20height%3D%2226%22%3E%3Cpath%20d%3D%22M0%204%20Q60%2010%20120%204%22%20stroke%3D%22%231E1813%22%20stroke-width%3D%221.6%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M6%204.6%20L20%205.0%20L13%2019.6%20Z%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M26%206.0%20L40%206.4%20L33%2021.0%20Z%22%20fill%3D%22%23C4231E%22%2F%3E%3Cpath%20d%3D%22M46%206.8%20L60%207.2%20L53%2021.8%20Z%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M66%207.0%20L80%207.4%20L73%2022.0%20Z%22%20fill%3D%22%23E5A93A%22%2F%3E%3Cpath%20d%3D%22M86%206.4%20L100%206.8%20L93%2021.4%20Z%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M106%205.2%20L120%205.6%20L113%2020.2%20Z%22%20fill%3D%22%23C4231E%22%2F%3E%3C%2Fsvg%3E") repeat-x;background-size:120px 26px}
+#vista-cadastro .cartao-inicio,#vista-cadastro .opcao{border:14px solid transparent;border-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20120%20120%22%20width%3D%22120%22%20height%3D%22120%22%3E%3Cg%20id%3D%22t%22%3E%3Crect%20width%3D%22120%22%20height%3D%2216%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M3.0%201.6%20L3.8%207.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M9.7%201.6%20L9.7%208.2%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M15.8%202.7%20L15.5%206.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M20.5%202.4%20L22.7%207.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M26.5%201.9%20L28.2%2011.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M31.2%201.8%20L32.8%206.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M38.1%201.6%20L38.3%209.8%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M42.4%202.0%20L42.0%207.2%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M49.3%202.5%20L50.8%208.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M54.5%202.6%20L56.4%209.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M60.0%202.6%20L59.6%2011.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M64.7%202.6%20L65.6%208.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M71.6%202.4%20L72.6%2011.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M78.5%202.2%20L80.7%208.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M85.8%203.0%20L86.5%206.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M93.9%201.5%20L94.8%207.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M100.2%202.7%20L98.0%207.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M104.9%201.6%20L106.7%207.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M111.1%202.8%20L112.7%209.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%222.1%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M116.5%202.9%20L118.4%208.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M2.0%2016%20L3.8%2013.2%20L6.0%2016%20M12.0%2016%20L15.2%2014.1%20L16.8%2016%20M22.0%2016%20L23.8%2013.4%20L27.8%2016%20M32.0%2016%20L34.1%2014.2%20L38.6%2016%20M42.0%2016%20L45.4%2013.2%20L48.2%2016%20M52.0%2016%20L54.4%2012.8%20L58.9%2016%20M62.0%2016%20L64.9%2013.4%20L67.2%2016%20M72.0%2016%20L74.3%2013.5%20L77.2%2016%20M82.0%2016%20L83.9%2012.5%20L87.3%2016%20M92.0%2016%20L93.7%2013.3%20L96.3%2016%20M102.0%2016%20L104.6%2013.4%20L108.8%2016%20Z%22%20fill%3D%22%23F2E7CF%22%2F%3E%3C%2Fg%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%2890%2060.0%2060.0%29%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%28180%2060.0%2060.0%29%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%28270%2060.0%2060.0%29%22%2F%3E%3C%2Fsvg%3E") 16 round;border-radius:0}
+#vista-cadastro .cartao-inicio.destaque{box-shadow:8px 8px 0 var(--vermelho)}
+#vista-cadastro .opcao[aria-pressed="true"]{background:var(--rosa);box-shadow:8px 8px 0 var(--vermelho)}
+#vista-cadastro .revisao{border:14px solid transparent;border-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20120%20120%22%20width%3D%22120%22%20height%3D%22120%22%3E%3Cg%20id%3D%22t%22%3E%3Crect%20width%3D%22120%22%20height%3D%2216%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M3.0%201.6%20L3.8%207.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M9.7%201.6%20L9.7%208.2%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M15.8%202.7%20L15.5%206.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M20.5%202.4%20L22.7%207.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M26.5%201.9%20L28.2%2011.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M31.2%201.8%20L32.8%206.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M38.1%201.6%20L38.3%209.8%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M42.4%202.0%20L42.0%207.2%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M49.3%202.5%20L50.8%208.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M54.5%202.6%20L56.4%209.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M60.0%202.6%20L59.6%2011.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M64.7%202.6%20L65.6%208.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M71.6%202.4%20L72.6%2011.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M78.5%202.2%20L80.7%208.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M85.8%203.0%20L86.5%206.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M93.9%201.5%20L94.8%207.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M100.2%202.7%20L98.0%207.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M104.9%201.6%20L106.7%207.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M111.1%202.8%20L112.7%209.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%222.1%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M116.5%202.9%20L118.4%208.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M2.0%2016%20L3.8%2013.2%20L6.0%2016%20M12.0%2016%20L15.2%2014.1%20L16.8%2016%20M22.0%2016%20L23.8%2013.4%20L27.8%2016%20M32.0%2016%20L34.1%2014.2%20L38.6%2016%20M42.0%2016%20L45.4%2013.2%20L48.2%2016%20M52.0%2016%20L54.4%2012.8%20L58.9%2016%20M62.0%2016%20L64.9%2013.4%20L67.2%2016%20M72.0%2016%20L74.3%2013.5%20L77.2%2016%20M82.0%2016%20L83.9%2012.5%20L87.3%2016%20M92.0%2016%20L93.7%2013.3%20L96.3%2016%20M102.0%2016%20L104.6%2013.4%20L108.8%2016%20Z%22%20fill%3D%22%23F2E7CF%22%2F%3E%3C%2Fg%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%2890%2060.0%2060.0%29%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%28180%2060.0%2060.0%29%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%28270%2060.0%2060.0%29%22%2F%3E%3C%2Fsvg%3E") 16 round;background:#FAF3E3;padding:4px 24px;box-shadow:8px 8px 0 var(--vermelho)}
+#vista-cadastro .revisao li:last-child{border-bottom:0}
+#vista-cadastro .visor{border:12px solid transparent;border-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20viewBox%3D%220%200%20120%20120%22%20width%3D%22120%22%20height%3D%22120%22%3E%3Cg%20id%3D%22t%22%3E%3Crect%20width%3D%22120%22%20height%3D%2216%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M3.0%201.6%20L3.8%207.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M9.7%201.6%20L9.7%208.2%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M15.8%202.7%20L15.5%206.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M20.5%202.4%20L22.7%207.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M26.5%201.9%20L28.2%2011.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M31.2%201.8%20L32.8%206.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M38.1%201.6%20L38.3%209.8%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M42.4%202.0%20L42.0%207.2%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M49.3%202.5%20L50.8%208.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M54.5%202.6%20L56.4%209.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.7%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M60.0%202.6%20L59.6%2011.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M64.7%202.6%20L65.6%208.9%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M71.6%202.4%20L72.6%2011.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M78.5%202.2%20L80.7%208.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%222.0%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M85.8%203.0%20L86.5%206.4%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M93.9%201.5%20L94.8%207.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M100.2%202.7%20L98.0%207.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M104.9%201.6%20L106.7%207.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M111.1%202.8%20L112.7%209.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%222.1%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M116.5%202.9%20L118.4%208.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M2.0%2016%20L3.8%2013.2%20L6.0%2016%20M12.0%2016%20L15.2%2014.1%20L16.8%2016%20M22.0%2016%20L23.8%2013.4%20L27.8%2016%20M32.0%2016%20L34.1%2014.2%20L38.6%2016%20M42.0%2016%20L45.4%2013.2%20L48.2%2016%20M52.0%2016%20L54.4%2012.8%20L58.9%2016%20M62.0%2016%20L64.9%2013.4%20L67.2%2016%20M72.0%2016%20L74.3%2013.5%20L77.2%2016%20M82.0%2016%20L83.9%2012.5%20L87.3%2016%20M92.0%2016%20L93.7%2013.3%20L96.3%2016%20M102.0%2016%20L104.6%2013.4%20L108.8%2016%20Z%22%20fill%3D%22%23F2E7CF%22%2F%3E%3C%2Fg%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%2890%2060.0%2060.0%29%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%28180%2060.0%2060.0%29%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23t%22%20transform%3D%22rotate%28270%2060.0%2060.0%29%22%2F%3E%3C%2Fsvg%3E") 16 round;border-radius:0;background:#FAF3E3}
+#vista-cadastro .ok-bola{width:150px;height:150px;border-radius:0;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%20width%3D%2264%22%20height%3D%2264%22%3E%3Cpolygon%20points%3D%2232.00%2C1.00%2036.29%2C10.42%2042.33%2C7.06%2044.22%2C13.71%2053.92%2C10.08%2050.29%2C19.78%2056.94%2C21.67%2053.58%2C27.71%2063.00%2C32.00%2053.58%2C36.29%2056.94%2C42.33%2050.29%2C44.22%2053.92%2C53.92%2044.22%2C50.29%2042.33%2C56.94%2036.29%2C53.58%2032.00%2C63.00%2027.71%2C53.58%2021.67%2C56.94%2019.78%2C50.29%2010.08%2C53.92%2013.71%2C44.22%207.06%2C42.33%2010.42%2C36.29%201.00%2C32.00%2010.42%2C27.71%207.06%2C21.67%2013.71%2C19.78%2010.08%2C10.08%2019.78%2C13.71%2021.67%2C7.06%2027.71%2C10.42%22%20fill%3D%22%231E1813%22%2F%3E%3Cpath%20d%3D%22M35.7%2013.4%20L36.7%208.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M42.6%2016.2%20L45.3%2012.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M47.8%2021.4%20L52.0%2018.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M50.6%2028.3%20L55.5%2027.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M50.6%2035.7%20L55.5%2036.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M47.8%2042.6%20L52.0%2045.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M42.6%2047.8%20L45.3%2052.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M35.7%2050.6%20L36.7%2055.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M28.3%2050.6%20L27.3%2055.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M21.4%2047.8%20L18.7%2052.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M16.2%2042.6%20L12.0%2045.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M13.4%2035.7%20L8.5%2036.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M13.4%2028.3%20L8.5%2027.3%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M16.2%2021.4%20L12.0%2018.7%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M21.4%2016.2%20L18.7%2012.0%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Cpath%20d%3D%22M28.3%2013.4%20L27.3%208.5%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.2%22%20stroke-linecap%3D%22round%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2216.5%22%20fill%3D%22%23C4231E%22%20stroke%3D%22%23F2E7CF%22%20stroke-width%3D%221.6%22%2F%3E%3C%2Fsvg%3E") center/100% 100% no-repeat}
+#vista-cadastro .ok-bola svg{width:44px;height:44px}
+#vista-cadastro .tela[data-tela="inicio"] .lead-grande::first-letter{float:left;font-family:"Alfa Slab One",Georgia,serif;font-weight:400;font-size:2.9em;line-height:.86;padding:8px 10px 6px;margin:5px 12px 0 0;background:#1E1813;color:#F2E7CF;box-shadow:3px 3px 0 var(--vermelho)}
+@media (max-width:560px){#vista-cadastro .cartao-inicio,#vista-cadastro .opcao,#vista-cadastro .revisao{border-width:10px}}
+</style>
+<style>#vista-cadastro .marca-galo span.nome.nome-longo{font-size:22px;letter-spacing:.01em;line-height:1.15;max-width:12.5em}</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><filter id="tinta-gasta" x="-2%" y="-5%" width="104%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="1" seed="4" result="ruido"/><feDisplacementMap in="SourceGraphic" in2="ruido" scale="1.8" xChannelSelector="R" yChannelSelector="G"/></filter></svg>
+<div id="vista-cadastro">
+
+<header class="topo">
+<div class="topo-dentro">
+<a class="marca-galo logo-galo" href="https://sites.google.com/view/galocordel" target="_blank" rel="noopener" data-link="LINK_INICIO"><span class="logo-quadro caixa-logo"><img class="galo-img" src="data:image/png;base64,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" alt=""><svg class="ovo" viewBox="0 0 100 100" aria-hidden="true"><g class="ovo-todo"><path class="casca-baixo" d="M18 60 L26 52 L34 60 L42 52 L50 60 L58 52 L66 60 L74 52 L82 60 C82 82 68 94 50 94 C32 94 18 82 18 60 Z" fill="#FAF3E3" stroke="#1E1813" stroke-width="3" stroke-linejoin="round"></path><path class="casca-cima" d="M18 60 C18 42 30 14 50 14 C70 14 82 42 82 60 L74 52 L66 60 L58 52 L50 60 L42 52 L34 60 L26 52 Z" fill="#FAF3E3" stroke="#1E1813" stroke-width="3" stroke-linejoin="round"></path><path class="ovo-inteiro" d="M50 14 C70 14 82 42 82 60 C82 82 68 94 50 94 C32 94 18 82 18 60 C18 42 30 14 50 14 Z" fill="#FAF3E3" stroke="#1E1813" stroke-width="3"></path><path class="trinca" d="M38 28 L45 37 L40 44 L49 52 L45 58" fill="none" stroke="#1E1813" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0"></path></g></svg></span><span class="nome-bloco"><span class="nome nome-longo">Guia do Agricultor Local</span></span></a>
+<a class="link-site" href="https://sites.google.com/view/galocordel" target="_blank" rel="noopener" data-link="LINK_INICIO">Voltar ao site</a>
+</div>
+</header>
+<main>
+<div class="barra" id="barra" hidden>
+<button type="button" class="btn-voltar" id="btn-voltar"><svg class="ico " width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg>Voltar</button>
+<div class="passos" id="passos"><div class="pontos" id="pontos" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div><span class="passos-texto">Passo <span id="passo-atual">1</span> de 7</span></div>
+<button type="button" class="btn-ouvir" data-ouvir aria-label="Ouvir esta tela"><span class="mic-bola"><svg class="ico " width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg></span>Ouvir</button>
+</div>
+
+<section class="tela" data-tela="inicio">
+<h1 class="grande">Cadastro do GALO</h1>
+<p class="lead lead-grande">Você não precisa ler nem escrever. Toque no botão de som e o GALO fala com você.</p>
+<button type="button" class="btn-ouvir-grande" data-ouvir><span class="mic-bola"><svg class="ico " width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg></span>Toque aqui para ouvir</button>
+<div class="grade grade-larga">
+<button type="button" class="cartao-inicio destaque" data-ir="quem"><svg class="ico " width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="7" r="4"></circle><path d="M2 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 3 .8"></path><path d="M19 14v6"></path><path d="M16 17h6"></path></svg><span>Fazer meu cadastro</span></button>
+<button type="button" class="cartao-inicio" data-ir="entrar"><svg class="ico " width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"></circle><path d="M10.8 12.2 20 3"></path><path d="M17 6l3 3"></path><path d="M15 8l2 2"></path></svg><span>Já tenho cadastro</span></button>
+</div>
+<p class="lead nota">Se quiser, peça ajuda a alguém de confiança da família ou da comunidade. Não pedimos RG nem CPF.</p>
+</section>
+
+<section class="tela" data-tela="quem" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"></path><path d="M5 10v10h14V10"></path><circle cx="9" cy="14" r="1.6"></circle><circle cx="15" cy="14" r="1.6"></circle><path d="M7 20v-1a2 2 0 0 1 4 0v1"></path><path d="M13 20v-1a2 2 0 0 1 4 0v1"></path></svg></span><h1>Quem vai usar o GALO?</h1></div>
+<p class="lead">Toque em uma figura.</p>
+<div class="grade"><button type="button" class="opcao" data-grupo="quem" data-valor="eu" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg><span class="opcao-nome">Só eu</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="quem" data-valor="familia" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="6" r="2.8"></circle><circle cx="17" cy="6" r="2.8"></circle><circle cx="12" cy="13" r="2.2"></circle><path d="M2.5 19v-2a4.5 4.5 0 0 1 4.5-4.5h.5"></path><path d="M21.5 19v-2a4.5 4.5 0 0 0-4.5-4.5h-.5"></path><path d="M8.5 21v-.5a3.5 3.5 0 0 1 7 0v.5"></path></svg><span class="opcao-nome">Minha família</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="quem" data-valor="comunidade" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"></path><path d="M5 10v10h14V10"></path><circle cx="9" cy="14" r="1.6"></circle><circle cx="15" cy="14" r="1.6"></circle><path d="M7 20v-1a2 2 0 0 1 4 0v1"></path><path d="M13 20v-1a2 2 0 0 1 4 0v1"></path></svg><span class="opcao-nome">Minha comunidade</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button></div>
+</section>
+
+<section class="tela" data-tela="nome" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"></circle><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"></path></svg></span><h1 id="pergunta-nome">Qual é o seu nome?</h1></div>
+<p class="lead">Toque no microfone e fale. O GALO repete o que entendeu.</p>
+<button type="button" class="btn-mic" data-mic="nome"><span class="mic-bola"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg></span><span class="mic-texto">Falar</span></button>
+<div class="campo"><label for="campo-nome">Ou alguém pode escrever aqui:</label><input id="campo-nome" type="text" placeholder="Nome" autocomplete="off"></div>
+</section>
+
+<section class="tela" data-tela="telefone" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg></span><h1>Qual é o número do seu celular?</h1></div>
+<p class="lead">Toque nos números. Cada número é falado quando você toca.</p>
+<div class="teclado-box"><output class="visor" aria-live="polite">(__) _____-____</output><div class="teclado"><button type="button" class="tecla" data-digito="1">1</button><button type="button" class="tecla" data-digito="2">2</button><button type="button" class="tecla" data-digito="3">3</button><button type="button" class="tecla" data-digito="4">4</button><button type="button" class="tecla" data-digito="5">5</button><button type="button" class="tecla" data-digito="6">6</button><button type="button" class="tecla" data-digito="7">7</button><button type="button" class="tecla" data-digito="8">8</button><button type="button" class="tecla" data-digito="9">9</button><button type="button" class="tecla tecla-cinza" data-acao="apagar" aria-label="Apagar o último número"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h11a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H9l-6-7z"></path><path d="M12 9.5l5 5"></path><path d="M17 9.5l-5 5"></path></svg></button><button type="button" class="tecla" data-digito="0">0</button><button type="button" class="tecla tecla-som" data-acao="ler" aria-label="Ouvir o número digitado"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg></button></div></div>
+<button type="button" class="btn-sem" id="sem-celular" aria-pressed="false">Não tenho celular</button>
+</section>
+
+<section class="tela" data-tela="local" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg></span><h1>Onde fica a sua terra?</h1></div>
+<p class="lead">Toque para usar a localização do celular, ou fale o nome da sua cidade.</p>
+<div class="linha"><button type="button" class="btn-grande" id="btn-localizar"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>Usar minha localização</button><button type="button" class="btn-mic" data-mic="local"><span class="mic-bola"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0"></path><path d="M12 18v3"></path></svg></span><span class="mic-texto">Falar</span></button></div>
+<div class="campo"><label for="campo-local">Ou alguém pode escrever a cidade aqui:</label><input id="campo-local" type="text" placeholder="Cidade e comunidade" autocomplete="off"></div>
+</section>
+
+<section class="tela" data-tela="plantio" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2.5 2 3.2 5.5 3.2 9s-1.2 7-3.2 9c-2-2-3.2-5.5-3.2-9S9.5 5 12 3z"></path><path d="M12 6v13"></path><path d="M9.5 10h5"></path><path d="M9.2 14h5.6"></path><path d="M8.8 13C6 13 4 15 3 18c3 0 5-1 6.5-2.5"></path><path d="M15.2 13c2.8 0 4.8 2 5.8 5-3 0-5-1-6.5-2.5"></path></svg></span><h1>O que você planta?</h1></div>
+<p class="lead">Toque em todas as figuras que quiser.</p>
+<div class="grade grade-estreita"><button type="button" class="opcao" data-grupo="cult" data-valor="milho" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c2.5 2 3.2 5.5 3.2 9s-1.2 7-3.2 9c-2-2-3.2-5.5-3.2-9S9.5 5 12 3z"></path><path d="M12 6v13"></path><path d="M9.5 10h5"></path><path d="M9.2 14h5.6"></path><path d="M8.8 13C6 13 4 15 3 18c3 0 5-1 6.5-2.5"></path><path d="M15.2 13c2.8 0 4.8 2 5.8 5-3 0-5-1-6.5-2.5"></path></svg><span class="opcao-nome">Milho</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="cult" data-valor="feijao" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 4.5c3-1.5 6 .5 5.5 3.5-.3 1.8-1.8 2.4-1 4.5.8 2-1 4.5-4 4-3.5-.5-5-4-4.5-7.5.3-2.2 1.8-3.8 4-4.5z"></path><path d="M16.5 10c2.5-.8 5 1 4.5 3.5-.3 1.5-1.5 2-.8 3.8.6 1.7-.9 3.7-3.4 3.3-2.9-.4-4.1-3.3-3.7-6.2.3-1.9 1.5-3.8 3.4-4.4z"></path></svg><span class="opcao-nome">Feijão</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="cult" data-valor="mandioca" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18.5 5.5c1.5 1.5 1 4-1 6L9 20c-2 1.8-5 1.5-5-1.5 0-1.5 1-3 2.5-4.5l8.5-8.5c1.5-1.2 2.5-1.2 3.5 0z"></path><path d="M18.5 5.5 21 3"></path><path d="M17 4.2 17.8 2"></path><path d="M19.8 7 22 6.2"></path><path d="M11 13l2 2"></path><path d="M8 16l1.5 1.5"></path></svg><span class="opcao-nome">Mandioca</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="cult" data-valor="frutas" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7.5c-2-2-7.5-1.5-7.5 4 0 4.5 3.2 9.5 7.5 8.5 4.3 1 7.5-4 7.5-8.5 0-5.5-5.5-6-7.5-4z"></path><path d="M12 7.5c0-2 1-3.5 3-4.5"></path><path d="M12 6c-1.5-1.8-3.5-2-5-1.5 1 1.6 3 2.2 5 1.5z"></path></svg><span class="opcao-nome">Frutas</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="cult" data-valor="hortalicas" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20c0-8.5 5.5-15 15-15 0 9.5-6.5 15-15 15z"></path><path d="M5 20 14 11"></path><path d="M10 15h4"></path><path d="M12 12.8V9"></path></svg><span class="opcao-nome">Verduras</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="cult" data-valor="outro" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 8v8"></path><path d="M8 12h8"></path></svg><span class="opcao-nome">Outras plantas</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button></div>
+</section>
+
+<section class="tela" data-tela="receber" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg></span><h1>Como você quer receber as orientações?</h1></div>
+<p class="lead">Toque em uma figura.</p>
+<div class="grade"><button type="button" class="opcao" data-grupo="receber" data-valor="audio" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg><span class="opcao-nome">Áudio</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="receber" data-valor="video" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="14" height="12" rx="2.5"></rect><path d="M16 10.5 22 7v10l-6-3.5"></path></svg><span class="opcao-nome">Vídeo</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button><button type="button" class="opcao" data-grupo="receber" data-valor="texto" aria-pressed="false"><svg class="ico " width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16"></path><path d="M4 10h16"></path><path d="M4 14h11"></path><path d="M4 18h7"></path></svg><span class="opcao-nome">Texto</span><span class="marca" aria-hidden="true"><svg class="ico " width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span></button></div>
+</section>
+
+<section class="tela" data-tela="revisao" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><h1>Confira o seu cadastro</h1></div>
+<p class="lead">Toque em ouvir para escutar tudo. Se algo estiver errado, toque em mudar.</p>
+<ul class="revisao"><li><div><span class="rev-rotulo">Quem usa</span><span class="rev-valor" data-resumo="quem"></span></div><button type="button" class="btn-mudar" data-mudar="quem">Mudar</button></li><li><div><span class="rev-rotulo">Nome</span><span class="rev-valor" data-resumo="nome"></span></div><button type="button" class="btn-mudar" data-mudar="nome">Mudar</button></li><li><div><span class="rev-rotulo">Celular</span><span class="rev-valor" data-resumo="tel"></span></div><button type="button" class="btn-mudar" data-mudar="telefone">Mudar</button></li><li><div><span class="rev-rotulo">Onde fica</span><span class="rev-valor" data-resumo="local"></span></div><button type="button" class="btn-mudar" data-mudar="local">Mudar</button></li><li><div><span class="rev-rotulo">O que planta</span><span class="rev-valor" data-resumo="cult"></span></div><button type="button" class="btn-mudar" data-mudar="plantio">Mudar</button></li><li><div><span class="rev-rotulo">Como recebe</span><span class="rev-valor" data-resumo="receber"></span></div><button type="button" class="btn-mudar" data-mudar="receber">Mudar</button></li></ul>
+</section>
+
+<section class="tela" data-tela="pronto" hidden>
+<span class="ok-bola"><svg class="ico " width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h1 class="grande">Cadastro feito!</h1>
+<p class="lead lead-grande">Bem-vindo ao GALO, <span id="nome-curto">produtor</span>. O próximo passo é contar sobre o solo da sua terra.</p>
+<div class="linha"><button type="button" class="btn-grande" data-ouvir><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>Ouvir de novo</button><a class="btn-contorno" href="https://sites.google.com/view/galocordel" target="_blank" rel="noopener" data-link="LINK_INICIO">Voltar ao site</a></div>
+</section>
+
+<section class="tela" data-tela="entrar" hidden>
+<div class="titulo"><span class="titulo-ico"><svg class="ico " width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="15" r="4"></circle><path d="M10.8 12.2 20 3"></path><path d="M17 6l3 3"></path><path d="M15 8l2 2"></path></svg></span><h1>Digite o número do seu celular</h1></div>
+<p class="lead">É o mesmo número usado no cadastro.</p>
+<div class="teclado-box"><output class="visor" aria-live="polite">(__) _____-____</output><div class="teclado"><button type="button" class="tecla" data-digito="1">1</button><button type="button" class="tecla" data-digito="2">2</button><button type="button" class="tecla" data-digito="3">3</button><button type="button" class="tecla" data-digito="4">4</button><button type="button" class="tecla" data-digito="5">5</button><button type="button" class="tecla" data-digito="6">6</button><button type="button" class="tecla" data-digito="7">7</button><button type="button" class="tecla" data-digito="8">8</button><button type="button" class="tecla" data-digito="9">9</button><button type="button" class="tecla tecla-cinza" data-acao="apagar" aria-label="Apagar o último número"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5h11a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H9l-6-7z"></path><path d="M12 9.5l5 5"></path><path d="M17 9.5l-5 5"></path></svg></button><button type="button" class="tecla" data-digito="0">0</button><button type="button" class="tecla tecla-som" data-acao="ler" aria-label="Ouvir o número digitado"><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg></button></div></div>
+</section>
+
+<section class="tela" data-tela="bemvindo" hidden>
+<span class="ok-bola"><svg class="ico " width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+<h1 class="grande">Que bom ter você de volta!</h1>
+<div class="linha"><button type="button" class="btn-grande" data-ouvir><svg class="ico " width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"></path><path d="M15.5 8.5a5 5 0 0 1 0 7"></path><path d="M19 5a10 10 0 0 1 0 14"></path></svg>Ouvir de novo</button><a class="btn-contorno" href="https://sites.google.com/view/galocordel" target="_blank" rel="noopener" data-link="LINK_INICIO">Voltar ao site</a></div>
+</section>
+
+<p class="aviso" id="aviso" role="status" hidden></p>
+<button type="button" class="btn-continuar" id="btn-continuar" hidden>Continuar</button>
+</main>
+<script>
+(function () {
+  // ---------- Dados ----------
+  var PASSOS = ['quem', 'nome', 'telefone', 'local', 'plantio', 'receber', 'revisao'];
+  var NOMES = {
+    quem: { eu: 'Só eu', familia: 'Minha família', comunidade: 'Minha comunidade' },
+    cult: { milho: 'Milho', feijao: 'Feijão', mandioca: 'Mandioca', frutas: 'Frutas', hortalicas: 'Verduras', outro: 'Outras plantas' },
+    receber: { audio: 'Áudio', video: 'Vídeo', texto: 'Texto' }
+  };
+  var NUM = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove'];
+  var estado = { tela: 'inicio', quem: '', nome: '', tel: '', telSem: false, local: '', cult: [], receber: '', ouvindo: '', aviso: '' };
+
+  // ---------- Atalhos ----------
+  var $ = function (sel, raiz) { return (raiz || document).querySelector(sel); };
+  var $$ = function (sel, raiz) { return Array.prototype.slice.call((raiz || document).querySelectorAll(sel)); };
+
+  // ---------- Voz (fala) ----------
+  function falar(texto) {
+    try {
+      var voz = window.speechSynthesis;
+      if (!voz || !texto) return;
+      voz.cancel();
+      var f = new SpeechSynthesisUtterance(texto);
+      f.lang = 'pt-BR';
+      if (window.galoVoz) galoVoz(f);
+      f.rate = 0.92;
+      voz.speak(f);
+    } catch (e) {}
+  }
+  function telFalado(t) { return t.split('').map(function (d) { return NUM[+d]; }).join(', '); }
+  function telFormatado(t) {
+    if (!t) return '(__) _____-____';
+    if (t.length <= 2) return '(' + t;
+    if (t.length <= 7) return '(' + t.slice(0, 2) + ') ' + t.slice(2);
+    return '(' + t.slice(0, 2) + ') ' + t.slice(2, 7) + '-' + t.slice(7);
+  }
+  function resumo() {
+    return {
+      quem: NOMES.quem[estado.quem] || '',
+      nome: estado.nome,
+      tel: estado.telSem ? 'Não tem celular' : telFormatado(estado.tel),
+      local: estado.local,
+      cult: estado.cult.map(function (k) { return NOMES.cult[k]; }).join(', '),
+      receber: NOMES.receber[estado.receber] || ''
+    };
+  }
+  function textoDaTela(tela) {
+    var r = resumo();
+    var perguntaNome = estado.quem === 'comunidade' ? 'Qual é o nome da sua comunidade? Toque no microfone e fale.'
+      : estado.quem === 'familia' ? 'Qual é o nome da pessoa responsável pela família? Toque no microfone e fale.'
+      : 'Qual é o seu nome? Toque no microfone e fale o seu nome.';
+    var T = {
+      inicio: 'Olá! Este é o cadastro do GALO. Você não precisa ler nem escrever. Sempre que quiser ouvir de novo, toque no botão vermelho com o desenho de som. Agora escolha: para fazer seu cadastro, toque na figura da pessoa. Se você já tem cadastro, toque na figura da chave.',
+      quem: 'Quem vai usar o GALO? Toque em uma figura. Só eu. Minha família. Ou minha comunidade. Depois, toque no botão vermelho grande, embaixo, para continuar.',
+      nome: perguntaNome,
+      telefone: 'Qual é o número do seu celular? Toque nos números. Cada número é falado quando você toca. Para apagar, toque no botão cinza. Se não tiver celular, toque em não tenho celular.',
+      local: 'Onde fica a sua terra? Toque no botão vermelho para usar a localização do celular. Ou toque no microfone e fale o nome da sua cidade.',
+      plantio: 'O que você planta? Toque em todas as figuras que quiser: milho, feijão, mandioca, frutas, verduras, ou outras plantas.',
+      receber: 'Como você quer receber as orientações? Por áudio, por vídeo, ou por texto. Toque em uma figura.',
+      revisao: 'Confira o seu cadastro. Quem usa: ' + r.quem + '. Nome: ' + r.nome + '. Celular: ' + (estado.telSem ? 'não tem celular' : telFalado(estado.tel)) + '. Onde fica: ' + r.local + '. Planta: ' + r.cult + '. Recebe as orientações por: ' + r.receber + '. Se estiver certo, toque no botão vermelho grande, embaixo, para confirmar.',
+      pronto: 'Pronto! Seu cadastro foi feito. Bem-vindo ao GALO. O próximo passo é contar sobre o solo da sua terra.',
+      entrar: 'Digite o número do seu celular, o mesmo que você usou no cadastro. Depois toque em entrar.',
+      bemvindo: 'Que bom ter você de volta!'
+    };
+    return T[tela] || '';
+  }
+
+  // ---------- Regras de avanço ----------
+  function podeAvancar() {
+    switch (estado.tela) {
+      case 'quem': return !!estado.quem;
+      case 'nome': return estado.nome.trim().length > 1;
+      case 'telefone': return estado.telSem || estado.tel.length >= 10;
+      case 'local': return estado.local.trim().length > 1;
+      case 'plantio': return estado.cult.length > 0;
+      case 'receber': return !!estado.receber;
+      case 'entrar': return estado.tel.length >= 10;
+      default: return true;
+    }
+  }
+  function dica() {
+    return {
+      quem: 'Primeiro, toque em uma das figuras.',
+      nome: estado.quem === 'comunidade' ? 'Primeiro, fale o nome da comunidade no microfone.' : 'Primeiro, fale o seu nome no microfone.',
+      telefone: 'Faltam números. O celular tem onze números, com o DDD.',
+      local: 'Primeiro, use a localização ou fale o nome da cidade.',
+      plantio: 'Toque em pelo menos uma figura.',
+      receber: 'Toque em uma das figuras.',
+      entrar: 'Faltam números. O celular tem onze números, com o DDD.'
+    }[estado.tela] || '';
+  }
+
+  // ---------- Desenho da tela ----------
+  function desenhar() {
+    var t = estado.tela;
+    $$('.tela').forEach(function (s) { s.hidden = s.getAttribute('data-tela') !== t; });
+    var semBarra = ['inicio', 'pronto', 'bemvindo'].indexOf(t) >= 0;
+    $('#barra').hidden = semBarra;
+    $('#btn-continuar').hidden = semBarra;
+    var i = PASSOS.indexOf(t);
+    $('#passos').hidden = i < 0;
+    $$('#pontos span').forEach(function (p, n) {
+      p.className = n === i ? 'atual' : (n < i ? 'feito' : '');
+    });
+    $('#passo-atual').textContent = i + 1;
+    // escolhas
+    $$('.opcao').forEach(function (b) {
+      var g = b.getAttribute('data-grupo'), v = b.getAttribute('data-valor');
+      var on = g === 'cult' ? estado.cult.indexOf(v) >= 0 : estado[g] === v;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+    // textos
+    $('#pergunta-nome').textContent = estado.quem === 'comunidade' ? 'Qual é o nome da sua comunidade?'
+      : estado.quem === 'familia' ? 'Qual é o nome do responsável pela família?' : 'Qual é o seu nome?';
+    if ($('#campo-nome').value !== estado.nome) $('#campo-nome').value = estado.nome;
+    if ($('#campo-local').value !== estado.local) $('#campo-local').value = estado.local;
+    $$('.visor').forEach(function (v) { v.textContent = telFormatado(estado.tel); });
+    $('#sem-celular').setAttribute('aria-pressed', estado.telSem ? 'true' : 'false');
+    $$('.btn-mic').forEach(function (b) {
+      var on = estado.ouvindo === b.getAttribute('data-mic');
+      b.classList.toggle('ouvindo', on);
+      $('.mic-texto', b).textContent = on ? 'Ouvindo… pode falar' : 'Falar';
+    });
+    var r = resumo();
+    $$('[data-resumo]').forEach(function (el) { el.textContent = r[el.getAttribute('data-resumo')]; });
+    $('#nome-curto').textContent = (estado.nome || '').split(' ')[0] || 'produtor';
+    // aviso e botão continuar
+    $('#aviso').hidden = !estado.aviso;
+    $('#aviso').textContent = estado.aviso;
+    var bc = $('#btn-continuar');
+    bc.textContent = t === 'revisao' ? 'Confirmar cadastro' : (t === 'entrar' ? 'Entrar' : 'Continuar');
+    bc.classList.toggle('bloqueado', !podeAvancar());
+  }
+  function mudar(novo) { for (var k in novo) estado[k] = novo[k]; desenhar(); }
+  function ir(tela) {
+    mudar({ tela: tela, aviso: '', ouvindo: '' });
+    window.scrollTo(0, 0);
+    falar(textoDaTela(tela));
+  }
+  function avisar(msg) { mudar({ aviso: msg }); falar(msg); }
+
+  // ---------- Ações ----------
+  function avancar() {
+    if (!podeAvancar()) return avisar(dica());
+    if (estado.tela === 'entrar') return ir('bemvindo');
+    var i = PASSOS.indexOf(estado.tela);
+    ir(i === PASSOS.length - 1 ? 'pronto' : PASSOS[i + 1]);
+  }
+  function voltar() {
+    var i = PASSOS.indexOf(estado.tela);
+    ir(estado.tela === 'entrar' || i <= 0 ? 'inicio' : PASSOS[i - 1]);
+  }
+  function microfone(campo) {
+    var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+    var semVoz = 'Este aparelho não aceita voz aqui. Peça para alguém de confiança escrever no espaço abaixo.';
+    if (!SR) return avisar(semVoz);
+    try {
+      if (window.speechSynthesis) window.speechSynthesis.cancel();
+      var r = new SR();
+      r.lang = 'pt-BR';
+      r.interimResults = false;
+      r.maxAlternatives = 1;
+      r.onresult = function (e) {
+        var texto = e.results[0][0].transcript;
+        var novo = { ouvindo: '', aviso: '' }; novo[campo] = texto;
+        mudar(novo);
+        falar('Entendi: ' + texto + '. Se estiver certo, toque em continuar. Se não, toque no microfone e fale de novo.');
+      };
+      r.onerror = function () { mudar({ ouvindo: '' }); avisar('Não consegui ouvir. Toque no microfone e fale de novo, mais perto do celular.'); };
+      r.onend = function () { if (estado.ouvindo) mudar({ ouvindo: '' }); };
+      mudar({ ouvindo: campo, aviso: '' });
+      r.start();
+    } catch (e) { mudar({ ouvindo: '' }); avisar(semVoz); }
+  }
+  function localizar() {
+    var falha = 'Não foi possível usar a localização. Toque no microfone e fale o nome da sua cidade.';
+    if (!navigator.geolocation) return avisar(falha);
+    mudar({ aviso: 'Procurando a sua localização…' });
+    navigator.geolocation.getCurrentPosition(function (p) {
+      mudar({ local: 'Localização do celular (' + p.coords.latitude.toFixed(3) + ', ' + p.coords.longitude.toFixed(3) + ')', aviso: '' });
+      falar('Pronto, a localização da sua terra foi registrada. Toque em continuar.');
+    }, function () { avisar(falha); }, { timeout: 12000 });
+  }
+  function tocarOpcao(g, v) {
+    if (g === 'cult') {
+      var on = estado.cult.indexOf(v) >= 0;
+      mudar({ cult: on ? estado.cult.filter(function (x) { return x !== v; }) : estado.cult.concat([v]), aviso: '' });
+      falar(on ? NOMES.cult[v] + ', tirado' : NOMES.cult[v]);
+    } else {
+      var novo = { aviso: '' }; novo[g] = v; mudar(novo);
+      falar(NOMES[g][v]);
+    }
+  }
+  function tecla(digito, acao) {
+    if (acao === 'apagar') { mudar({ tel: estado.tel.slice(0, -1) }); return falar('Apagado'); }
+    if (acao === 'ler') return falar(estado.tel ? 'O número é: ' + telFalado(estado.tel) : 'Nenhum número ainda.');
+    if (estado.tel.length >= 11) return falar('O número já está completo.');
+    mudar({ tel: estado.tel + digito, telSem: false, aviso: '' });
+    falar(NUM[+digito]);
+  }
+
+  // ---------- Cliques ----------
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('button');
+    if (!b) return;
+    if (b.hasAttribute('data-ouvir')) return falar(textoDaTela(estado.tela));
+    if (b.hasAttribute('data-ir')) {
+      if (b.getAttribute('data-ir') === 'entrar') estado.tel = '';
+      return ir(b.getAttribute('data-ir'));
+    }
+    if (b.hasAttribute('data-mudar')) return ir(b.getAttribute('data-mudar'));
+    if (b.classList.contains('opcao')) return tocarOpcao(b.getAttribute('data-grupo'), b.getAttribute('data-valor'));
+    if (b.classList.contains('tecla')) return tecla(b.getAttribute('data-digito'), b.getAttribute('data-acao'));
+    if (b.hasAttribute('data-mic')) return microfone(b.getAttribute('data-mic'));
+    if (b.id === 'btn-localizar') return localizar();
+    if (b.id === 'btn-voltar') return voltar();
+    if (b.id === 'btn-continuar') return avancar();
+    if (b.id === 'sem-celular') {
+      var v = !estado.telSem;
+      mudar({ telSem: v, tel: v ? '' : estado.tel, aviso: '' });
+      return falar(v ? 'Sem celular. Toque em continuar.' : 'Tudo bem, digite o número.');
+    }
+  });
+  $('#campo-nome').addEventListener('input', function (e) { estado.nome = e.target.value; $('#btn-continuar').classList.toggle('bloqueado', !podeAvancar()); });
+  $('#campo-local').addEventListener('input', function (e) { estado.local = e.target.value; $('#btn-continuar').classList.toggle('bloqueado', !podeAvancar()); });
+
+  desenhar();
+})();
+</script>
+
+</div>
+
+</body>
+</html>
